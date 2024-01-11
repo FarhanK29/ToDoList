@@ -51,7 +51,6 @@ function saveData(){
 function showTask() {
     divList.innerHTML = localStorage.getItem("data");
 
-    // Restore event listeners after setting innerHTML
     const crossButtons = document.querySelectorAll(".cross");
     crossButtons.forEach(button => {
         button.addEventListener("click", function () {
@@ -70,11 +69,4 @@ function showTask() {
     });
 }
 
-// Call showTask after setting up event listeners
 showTask();
-
-// function showTask(){
-//     divList.innerHTML = localStorage.getItem("data");
-// }
-
-// showTask();
